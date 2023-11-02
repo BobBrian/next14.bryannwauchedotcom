@@ -1,4 +1,5 @@
 import { Resturant, Todo } from "./definitions";
+
 //Todo Actions
 const API_PATH = "http://localhost:3100/todos";
 

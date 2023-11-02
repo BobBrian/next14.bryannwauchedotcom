@@ -15,7 +15,7 @@ export default async  function Home() {
         <h1 className="text-slate-200 text-center text-4xl mb-8">Chibuikem Nwauche</h1>
         <h2 className="text-slate-200 text-center text-3xl mb-6">Review Application</h2>
 
-        <Link href="/create" className="text-white bg-blue-700 hover:bg-lime-500 
+        <Link href="resturant/create" className="text-white bg-blue-700 hover:bg-lime-500 
         focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm 
         px-5 py-2.5 mr-2 mb-2 ">Create New Review</Link>
        

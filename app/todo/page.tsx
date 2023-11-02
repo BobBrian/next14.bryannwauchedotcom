@@ -4,6 +4,7 @@ import { AddNewTodo } from '../components/addnewTodo'
 import * as PostApi from  "@/app/lib/actions"
 import { Todo } from '../lib/definitions';
 import { revalidatePath } from 'next/cache';
+import { redirect } from 'next/navigation';
 import { ListTodo } from '../components/listTodo'
 
 type Todos = Array<Todo>;
@@ -15,13 +16,16 @@ export default async  function Todo() {
   const postNewTodo = async (description: string) => {
     "use server";
     await PostApi.AddTodo(description);
-    revalidatePath("/todo");
+    revalidatePath('/todo');
+    redirect('/todo');
+    
   };
   
   const deleteTodo = async (id: number) => {
     "use server";
     await PostApi.DeleteTodo(id);
-    revalidatePath("/todo");
+    revalidatePath('/todo');
+    redirect('/todo');
     
   };
 

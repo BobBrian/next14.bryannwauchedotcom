@@ -21,7 +21,7 @@ export const ListReview = (
         </a>
         <button className="mt-2 inline-flex items-center px-3 py-2 text-center text-white 
         bg-red-500 rounded-lg rounded-lg hover:bg-red-900"
-         onClick={() => { startTransition(() => {deleteReview(userrest.id); });}} >Delete Rewview</button>
+         onClick={() => { startTransition(() => {deleteReview(userrest.id); });}} >Delete Review</button>
     </div>
   )
 }

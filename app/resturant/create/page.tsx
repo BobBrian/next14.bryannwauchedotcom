@@ -1,7 +1,8 @@
 import { AddNewReview } from '@/app/components/addnewReview'
 import React from 'react'
-import { revalidatePath } from 'next/cache';
 import * as PostApi from  "@/app/lib/actions"
+import { revalidatePath } from 'next/cache';
+import { redirect } from 'next/navigation';
 
 
 export default async function Page() {
@@ -9,7 +10,9 @@ export default async function Page() {
   const postNewReview = async (authorname:string,resturantname:string, body:string) => {
     "use server";
     await PostApi.AddResturant(authorname, resturantname, body)
-    revalidatePath("/resturant");
+    revalidatePath('/resturant');
+    redirect('/resturant');
+    
   };
 
   return (
