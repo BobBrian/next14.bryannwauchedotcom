@@ -15,9 +15,17 @@ export default async  function Home() {
         <h1 className="text-slate-200 text-center text-4xl mb-8">Chibuikem Nwauche</h1>
         <h2 className="text-slate-200 text-center text-3xl mb-6">Review Application</h2>
 
-        <Link href="resturant/create" className="text-white bg-blue-700 hover:bg-lime-500 
-        focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm 
-        px-5 py-2.5 mr-2 mb-2 ">Create New Review</Link>
+        <button className="mt-6 mb-6 inline-flex items-center px-3 py-2 text-sm font-medium 
+        text-center text-white bg-blue-700 rounded-lg hover:bg-red-800 ">
+        <Link href="/">Return to Home Page</Link>   
+        </button>
+        
+        <br/>
+
+        <button className="mt-2 mb-6 inline-flex items-center px-3 py-2 text-sm font-medium 
+        text-center text-white bg-blue-700 rounded-lg hover:bg-green-800 ">
+        <Link href="resturant/create">Create A Review</Link>   
+        </button>
        
         <div className="relative overflow-x-auto">
             <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">

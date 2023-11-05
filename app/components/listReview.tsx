@@ -19,7 +19,7 @@ export const ListReview = (
         text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
             <Link href="/resturant">Back</Link>   
         </a>
-        <button className="mt-2 inline-flex items-center px-3 py-2 text-center text-white 
+        <button className="mt-2 ml-4 inline-flex items-center px-3 py-2 text-center text-white 
         bg-red-500 rounded-lg rounded-lg hover:bg-red-900"
          onClick={() => { startTransition(() => {deleteReview(userrest.id); });}} >Delete Review</button>
     </div>
